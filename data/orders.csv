@@ -1,4 +1,4 @@
-order_id,customer_id,amount,status,order_date
+id,client_id,montant,statut,date
 1,1,100.50,completed,2024-01-01 10:00:00
 2,2,200.75,completed,2024-01-02 11:00:00
 3,3,150.00,pending,2024-01-03 12:00:00

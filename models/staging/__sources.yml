@@ -5,7 +5,7 @@ sources:
     tables:
       - name: customers
         config:
-          external_location: "data/customers.csv"
+          external_location: "{{ env_var('CUSTOMER_PATH') }}"
       - name: orders
         config:
-          external_location: "data/orders.csv"
+          external_location: "{{ env_var('ORDER_PATH') }}"

@@ -7,5 +7,6 @@
                 "isAsync": false
             }
         ]
-    }
+    },
+    "python.terminal.useEnvFile": true
 }
