@@ -1,0 +1,2 @@
+dbt docs generate
+génère la documentation du projet dbt, incluant les modèles, les sources, les tests et les relations entre les objets, et crée les fichiers nécessaires pour visualiser cette documentation via un navigateur

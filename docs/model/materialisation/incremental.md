@@ -1,0 +1,1 @@
+créé une table SQL qui est mise à jour de manière incrémentale, ajoutant uniquement les nouvelles données ou les données modifiées depuis la dernière exécution
