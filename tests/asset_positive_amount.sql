@@ -1,4 +1,7 @@
-SELECT
+{{
+    config (severity = 'error', store_failures = TRUE)
+}}
+SELEcT
     order_id,
     amount
 FROM
