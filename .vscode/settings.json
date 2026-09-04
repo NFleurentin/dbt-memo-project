@@ -1,0 +1,11 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "transform/models/.*\\.sql$",
+                "cmd": "dbt format -s ${fileBasenameNoExt} --project-dir ${workspaceFolder}/transform && dbt lint -s ${fileBasenameNoExt} --project-dir ${workspaceFolder}/transform --fix",
+                "isAsync": false
+            }
+        ]
+    }
+}
