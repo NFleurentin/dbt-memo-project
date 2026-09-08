@@ -1,6 +1,19 @@
 version: 2
 
 models:
+  - name: stg_customers
+    description: "Clients nettoyés depuis la source brute. Un client par ligne."
+    columns:
+      - name: customer_id
+        description: "Identifiant unique du client."
+        data_tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Email du client, mis en minuscules."
+        data_tests:
+          - not_null
+
   - name: stg_orders
     description: "Commandes nettoyées depuis la source brute. Une commande par ligne."
     columns:
@@ -17,9 +30,9 @@ models:
               arguments:
                 to: ref('stg_customers')
                 field: customer_id
-      - name: status
+      - name: statut
         description: "Statut de la commande : completed ou pending."
         data_tests:
           - accepted_values:
               arguments:
-                values: ["completed", "pending", "cancelled"]
+                values: ["completed", "pending"]
